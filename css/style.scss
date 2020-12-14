@@ -6,6 +6,7 @@ $secondary-color: #ffee32;
 $secondary-color-dark: #333533;
 $accent-color: #ffd100;
 $alter-color: #d6d6d6;
+$video-background: #000000c0;
 
 html {
   font-size: 62.5%;
@@ -141,6 +142,7 @@ main {
 
     h2 {
       text-align: center;
+      margin-top: 0;
       font-size: 3rem;
     }
 
@@ -163,7 +165,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12rem 0;
+  padding: 0;
+  padding-bottom: 10rem;
 
   h2 {
     text-align: center;
@@ -179,7 +182,15 @@ main {
       padding: 2rem;
       width: 300px;
       text-align: center;
-      border: 1px solid #000;
+      background: #fff;
+      transition: all 0.5s;
+      border: 1px solid $primary-color-dark;
+
+      // &:hover {
+      //   z-index: 1;
+      //   transition: all 0.5s;
+      //   transform: scale(1.05);
+      // }
 
       img {
         width: 70%;
@@ -204,7 +215,7 @@ main {
 .function {
   background: $primary-color-dark;
   width: 100%;
-  color: #fff;
+  color: $primary-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,7 +265,6 @@ main {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  margin-bottom: 50rem;
   position: relative;
 
   .video-background {
@@ -268,7 +278,7 @@ main {
   .video-description {
     height: 100%;
     width: 100%;
-    background-color: #000000c0;
+    background-color: $video-background;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -278,15 +288,41 @@ main {
     position: absolute;
 
     h2 {
-      color: #fff;
+      color: $primary-color;
       margin: 0;
       font-size: 3rem;
     }
     p {
       font-size: 2rem;
-      color: #fff;
+      color: $primary-color;
       margin: 0;
       width: 50%;
+    }
+  }
+}
+
+.contact-section {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color-dark;
+
+  .contact-image {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+    }
+  }
+
+  .contact-text {
+    color: $primary-color;
+
+    h1 {
+      font-size: 3rem;
     }
   }
 }
