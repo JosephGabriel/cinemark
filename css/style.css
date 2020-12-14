@@ -376,14 +376,13 @@ main .image-headline img {
 }
 
 .contact-section {
-  padding: 2rem 4rem;
+  padding: 8rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #202020;
 }
 
 .contact-section .contact-image {
@@ -399,10 +398,80 @@ main .image-headline img {
 }
 
 .contact-section .contact-text {
-  color: #fff;
+  width: 50%;
 }
 
 .contact-section .contact-text h1 {
   font-size: 3rem;
+}
+
+.contact-section .contact-text p {
+  font-size: 3rem;
+}
+
+.contact-section .contact-text .icon-social {
+  width: 70%;
+  font-size: 3rem;
+}
+
+.contact-section .contact-text .icon-social a {
+  color: #202020;
+  text-decoration: none;
+}
+
+.contact-section .contact-text .icon-social a i {
+  margin-right: 3rem;
+}
+
+.contact-section .contact-text .icon-social a i:hover {
+  color: #ffd100;
+}
+
+.footer {
+  background: #202020;
+  height: 400px;
+  width: 100%;
+}
+
+.page-404 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-404 img {
+  width: 50%;
+  height: 50%;
+}
+
+.page-404 h2 {
+  color: #fff;
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.page-404 button {
+  background: #fff;
+  color: #202020;
+  font-size: 2.5rem;
+  padding: 1rem 4rem;
+  border: none;
+}
+
+.page-404 button:hover {
+  cursor: pointer;
+  background: #ffd100;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

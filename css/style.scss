@@ -302,10 +302,9 @@ main {
 }
 
 .contact-section {
-  padding: 2rem 4rem;
+  padding: 8rem 4rem;
   display: flex;
   justify-content: space-between;
-  background-color: $primary-color-dark;
 
   .contact-image {
     width: 50%;
@@ -319,10 +318,71 @@ main {
   }
 
   .contact-text {
-    color: $primary-color;
+    width: 50%;
 
     h1 {
       font-size: 3rem;
+    }
+    p {
+      font-size: 3rem;
+    }
+
+    .icon-social {
+      width: 70%;
+      font-size: 3rem;
+
+      a {
+        color: $primary-color-dark;
+        text-decoration: none;
+
+        i {
+          margin-right: 3rem;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: $primary-color-dark;
+  height: 400px;
+  width: 100%;
+}
+
+.page-404 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 4rem;
+    margin: 2rem;
+  }
+
+  button {
+    background: $primary-color;
+    color: $primary-color-dark;
+    font-size: 2.5rem;
+    padding: 1rem 4rem;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: $accent-color;
+
+      color: $primary-color;
     }
   }
 }
