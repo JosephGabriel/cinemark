@@ -158,3 +158,45 @@ main {
     }
   }
 }
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .card-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+
+    .card {
+      padding: 2rem;
+      width: 300px;
+      text-align: center;
+      border: 1px solid #000;
+
+      img {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 2rem;
+      }
+
+      h6 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 0;
+      }
+      p {
+        text-align: center;
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
