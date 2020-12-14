@@ -163,6 +163,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 12rem 0;
 
   h2 {
     text-align: center;
@@ -173,7 +174,6 @@ main {
     width: 90%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5rem;
 
     .card {
       padding: 2rem;
@@ -197,6 +197,96 @@ main {
         margin: 0;
         font-size: 1.5rem;
       }
+    }
+  }
+}
+
+.function {
+  background: $primary-color-dark;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .image-function {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    .function-detail {
+      margin-top: -15rem;
+      width: 50%;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 3rem;
+      }
+    }
+    .function-detail2 {
+      margin-top: 10.5rem;
+      width: 46%;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 50rem;
+  position: relative;
+
+  .video-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-description {
+    height: 100%;
+    width: 100%;
+    background-color: #000000c0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+
+    h2 {
+      color: #fff;
+      margin: 0;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+      color: #fff;
+      margin: 0;
+      width: 50%;
     }
   }
 }
